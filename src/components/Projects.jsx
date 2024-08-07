@@ -20,13 +20,15 @@ const Projects = () => {
                         initial={{opacity: 0, x: -100}}
                         transition={{duration: 1}}
                         className="w-full lg:w-1/4">
-                        <img 
+                        <a href={project.linkurl} target="_blank">
+                            <img 
                             src={project.image} 
-                            width={150} 
-                            height={150} 
+                            width={180} 
+                            height={180} 
                             alt={project.title} 
-                            className="mb-6 rounded"
-                        />
+                            className="mb-6 rounded-xl border border-solid border-black cursor-pointer transition-opacity duration-300 hover:opacity-100 opacity-[0.5]"
+                            />
+                        </a>
                     </motion.div> 
 
                     <motion.div 
@@ -42,6 +44,7 @@ const Projects = () => {
                                 {technology}
                             </span>
                         ))}
+                        <a className="block pt-5 font-bold tracking-widest cursor-default" href={project.linkurl} target="_blank"><button className="text-orange-300 hover:text-purple-500">View project</button></a>
                     </motion.div>
                 </div>
             ))}

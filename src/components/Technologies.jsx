@@ -1,6 +1,6 @@
 import {RiReactjsFill, RiHtml5Fill, RiCss3Fill, RiJavascriptFill,} from "react-icons/ri";
-import {TbBrandNextjs} from "react-icons/tb";
-import {SiMongodb, SiTailwindcss, SiFigma, SiWordpress, SiOpenai} from "react-icons/si";
+import {TbBrandGithub} from "react-icons/tb";
+import {SiGithub, SiTailwindcss, SiFigma, SiWordpress, SiOpenai} from "react-icons/si";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -83,7 +83,7 @@ const Technologies = () => {
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4"
             >
-                <TbBrandNextjs className="text-7xl" />
+                <SiGithub className="text-7xl text-green-500" />
             </motion.div>
 
             <motion.div 
@@ -112,16 +112,6 @@ const Technologies = () => {
             >
                 <SiOpenai className="text-7xl bg-cyan-600 text-slate-100 p-2 rounded-md" />
             </motion.div>
-
-            <motion.div 
-                variants={iconVariants(5)}
-                initial="initial"
-                animate="animate"
-                className="rounded-2xl border-4 border-neutral-800 p-4"
-            >
-                <SiMongodb className="text-7xl text-green-500" />
-            </motion.div>
-            
 
         </motion.div>
     </div>
