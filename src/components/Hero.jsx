@@ -1,6 +1,8 @@
 import { HERO_CONTENT } from "../constants"
 import profilePic from "../assets/ndiMzolisaProfile1Original2.3.png"
 import { motion } from "framer-motion"
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const container = (delay) => ({
     hidden: {x: -100, opacity: 0},
@@ -38,13 +40,25 @@ const Hero = () => {
                     <motion.p 
                         variants={container(1)}
                         initial="hidden"
-                        animate="visible" 
+                        animate="visible"  
                         className="my-2 max-w-xl py-6 font-light font-[verdana] text-neutral-400 tracking-widest leading-[2]"
                     >
                         {HERO_CONTENT}
                     </motion.p>
+
+                    <motion.div
+                        variants={container(1.5)}
+                        initial="hidden"
+                        animate="visible" 
+                        className="mx-0 mt-3 mb-0 flex items-center justify-center gap-4 text-2xl pb-[3rem]"
+                    >
+                        <a href="https://www.linkedin.com/in/ndimande-mzolisa-507069197/" target="_blank" className="pointer-cursor transition-opacity duration-300 hover:opacity-100 opacity-[0.5]"><FaLinkedin /></a>
+                        <a href="https://github.com/Ndi-Mzolisa" target="_blank" className="pointer-cursor transition-opacity duration-300 hover:opacity-100 opacity-[0.5]"><FaGithub /></a>
+                    </motion.div>
+
                 </div>
             </div>
+
             <div className="w-full lg:w-1/2 lg:p-8 ">
                 <div className="flex justify-center">
                     <motion.img 
