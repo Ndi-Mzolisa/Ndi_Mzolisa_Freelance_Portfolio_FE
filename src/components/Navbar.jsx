@@ -18,7 +18,7 @@ export const Navbar = () => {
         <div className="flex flex-shrink-0 items-center">
           <a href="#primary-multipage-navbar">
             <img
-              className="mx-2 w-[100px] rounded-[4px] fixed top-3 left-[2rem] transition-opacity duration-300 hover:opacity-100 opacity-[0.5]"
+              className="mx-2 w-[100px] rounded-[4px] fixed top-3 left-[2rem] transition-opacity duration-300 hover:opacity-100 opacity-[0.84]"
               src={logo}
               alt="logo"
             />
