@@ -18,7 +18,7 @@ const iconVariants = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div id="skills" className="border-b border-neutral-800 pb-24">
+    <div id="skills" className="border-b border-b-neutral-800 pb-24 z-10">
         <motion.h2
             whileInView={{opacity: 1, y: 0}}
             initial={{opacity: 0, y: -100}} 
@@ -30,88 +30,26 @@ const Technologies = () => {
             whileInView={{opacity: 1, x: 0}} 
             initial={{opacity: 0, x: -100}}
             transition={{duration: 1.5}}
-            className="flex flex-wrap items-center justify-center gap-4"
+            className="flex flex-wrap items-center justify-center gap-8"
         >
-            <motion.div 
-                variants={iconVariants(2)}
-                initial="initial"
-                animate="animate"
-                className="rounded-2xl border-4 border-neutral-800 bg-[#ff4040] p-4"
-            >
-                <RiHtml5Fill className="text-7xl fill-slate-100 bg-transparent" />
-            </motion.div>
+        
+                <RiHtml5Fill className="text-7xl text-[#e34c26]" />
 
-            <motion.div 
-                variants={iconVariants(3.6)}
-                initial="initial"
-                animate="animate"
-                className="rounded-2xl border-4 border-neutral-800 bg-[#4040cc] p-4"
-            >
-                <RiCss3Fill className="text-7xl text-slate-100" />
-            </motion.div>
+                <RiCss3Fill className="text-7xl text-[#264de4]" />
 
-            <motion.div 
-                variants={iconVariants(4)}
-                initial="initial"
-                animate="animate"
-                className="rounded-2xl border-4 border-neutral-800 p-4 bg-slate-300"
-            >
                 <SiTailwindcss className="text-7xl text-cyan-700" />
-            </motion.div>
 
-            <motion.div 
-                variants={iconVariants(2)}
-                initial="initial"
-                animate="animate"
-                className="rounded-2xl border-4 border-neutral-800 p-4"
-            >
                 <RiJavascriptFill className="text-7xl text-yellow-400" />
-            </motion.div>
 
-            <motion.div 
-                variants={iconVariants(2.8)}
-                initial="initial"
-                animate="animate"
-                className="rounded-2xl border-4 border-neutral-800 p-4"
-            >
                 <RiReactjsFill className="text-7xl text-cyan-400" />
-            </motion.div>
 
-            <motion.div 
-                variants={iconVariants(3.5)}
-                initial="initial"
-                animate="animate"
-                className="rounded-2xl border-4 border-neutral-800 p-4"
-            >
                 <SiGithub className="text-7xl text-green-500" />
-            </motion.div>
 
-            <motion.div 
-                variants={iconVariants(2.8)}
-                initial="initial"
-                animate="animate"
-                className="rounded-2xl border-4 border-neutral-800 p-4"
-            >
                 <SiFigma className="text-7xl text-cyan-400" />
-            </motion.div>
 
-            <motion.div 
-                variants={iconVariants(2)}
-                initial="initial"
-                animate="animate"
-                className="rounded-2xl border-4 border-neutral-800 p-4"
-            >
                 <SiWordpress className="text-7xl text-slate-100" />
-            </motion.div>
 
-            <motion.div 
-                variants={iconVariants(2)}
-                initial="initial"
-                animate="animate"
-                className="rounded-2xl border-4 border-neutral-800 p-4"
-            >
-                <SiOpenai className="text-7xl bg-cyan-600 text-slate-100 p-2 rounded-md" />
-            </motion.div>
+                <SiOpenai className="text-7xl text-[#74AA9C]" />
 
         </motion.div>
     </div>
