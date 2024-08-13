@@ -9,7 +9,7 @@ export const Navbar = () => {
   };
 
   return (
-    <>
+    <div className="fixed top-0 right-[6rem] pb-[12rem]">
       {/* Logo Navbar */}
       <nav
         id="landingpage-logo-navbar"
@@ -94,6 +94,6 @@ export const Navbar = () => {
           ))}
         </ul>
       </nav>
-    </>
+    </div>
   );
 };

@@ -15,7 +15,7 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div id="home" className="border-b border-neutral-900 pb-4 lg:mb-36">
+    <div id="home" className="pt-[10rem] border-b border-neutral-900 pb-4 lg:mb-36">
         <div className="flex flex-wrap px-0 md:px-[5rem] lg:px-[10rem] pt-[5rem]">
             <div className="w-full lg:w-1/2">
                 <div className="flex flex-col items-center lg:items-start">
@@ -50,7 +50,7 @@ const Hero = () => {
                         variants={container(1.5)}
                         initial="hidden"
                         animate="visible" 
-                        className="mx-0 mt-3 mb-0 flex items-center justify-center gap-4 text-2xl pb-[3rem]"
+                        className="mx-0 mt-3 mb-0 flex items-center justify-center gap-8 text-4xl pb-[3rem]"
                     >
                         <a href="https://www.linkedin.com/in/ndimande-mzolisa-507069197/" target="_blank" className="pointer-cursor transition-opacity duration-300 hover:opacity-100 opacity-[0.5]"><FaLinkedin /></a>
                         <a href="https://github.com/Ndi-Mzolisa" target="_blank" className="pointer-cursor transition-opacity duration-300 hover:opacity-100 opacity-[0.5]"><FaGithub /></a>
