@@ -16,7 +16,7 @@ export const Navbar = () => {
         className="mb-2 flex items-center justify-between pt-[0px] pb-[0px]"
       >
         <div className="flex flex-shrink-0 items-center">
-          <a href="/">
+          <a href="#home">
             <img
               className="mx-2 w-[100px] rounded-[4px] fixed top-3 left-[2rem] transition-transform duration-300 hover:opacity-100 opacity-[0.9] hover:scale-[1.2]"
               src={logo}
