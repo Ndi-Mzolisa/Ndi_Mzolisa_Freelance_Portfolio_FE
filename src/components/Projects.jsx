@@ -26,7 +26,7 @@ const Projects = () => {
                             width={180} 
                             height={180} 
                             alt={project.title} 
-                            className="mb-6 rounded-xl border border-solid border-black cursor-pointer transition-opacity duration-300 hover:opacity-100 opacity-[0.5]"
+                            className="mb-6 rounded-xl border border-solid border-black cursor-pointer transition-transform duration-300 hover:opacity-100 opacity-[0.5] hover:scale-110 "
                             />
                         </a>
                     </motion.div> 

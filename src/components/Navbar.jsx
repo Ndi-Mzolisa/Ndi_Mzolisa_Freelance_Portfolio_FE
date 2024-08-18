@@ -16,9 +16,9 @@ export const Navbar = () => {
         className="mb-2 flex items-center justify-between pt-[0px] pb-[0px]"
       >
         <div className="flex flex-shrink-0 items-center">
-          <a href="#primary-multipage-navbar">
+          <a href="/">
             <img
-              className="mx-2 w-[100px] rounded-[4px] fixed top-3 left-[2rem] transition-opacity duration-300 hover:opacity-100 opacity-[0.84]"
+              className="mx-2 w-[100px] rounded-[4px] fixed top-3 left-[2rem] transition-transform duration-300 hover:opacity-100 opacity-[0.9] hover:scale-[1.2]"
               src={logo}
               alt="logo"
             />
@@ -85,7 +85,7 @@ export const Navbar = () => {
           {["Home", "About", "Skills", "Projects"].map((item) => (
             <li key={item} className="w-full md:flex-grow">
               <a
-                className="block w-full text-left md:inline-block md:w-auto cursor-pointer bg-slate-100 font-semibold border border-[#216699] py-3 px-5 my-2 md:mx-6 rounded-md text-[#996621] hover:bg-[#216699] hover:border-[#216699] hover:text-[#f9f9f9] transition duration-500"
+                className="block w-[90%] justify-center text-center md:inline-block md:w-auto cursor-pointer bg-slate-100 font-semibold border border-[#216699] py-3 px-5 my-2 mx-4 md:mx-6 rounded-md text-[#996621] hover:bg-[#216699] hover:border-[#216699] hover:text-[#f9f9f9] transition duration-500"
                 href={`#${item.toLowerCase()}`}
               >
                 {item}

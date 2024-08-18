@@ -52,8 +52,8 @@ const Hero = () => {
                         animate="visible" 
                         className="mx-0 mt-3 mb-0 flex items-center justify-center gap-8 text-4xl pb-[3rem]"
                     >
-                        <a href="https://www.linkedin.com/in/ndimande-mzolisa-507069197/" target="_blank" className="pointer-cursor transition-opacity duration-300 hover:opacity-100 opacity-[0.5]"><FaLinkedin /></a>
-                        <a href="https://github.com/Ndi-Mzolisa" target="_blank" className="pointer-cursor transition-opacity duration-300 hover:opacity-100 opacity-[0.5]"><FaGithub /></a>
+                        <a href="https://www.linkedin.com/in/ndimande-mzolisa-507069197/" target="_blank" className="pointer-cursor transition-transform duration-300 hover:scale-[1.2] hover:opacity-100 opacity-[0.72]"><FaLinkedin /></a>
+                        <a href="https://github.com/Ndi-Mzolisa" target="_blank" className="pointer-cursor transition-transform duration-300 hover:scale-[1.2] hover:opacity-100 opacity-[0.72]"><FaGithub /></a>
                     </motion.div>
 
                 </div>
