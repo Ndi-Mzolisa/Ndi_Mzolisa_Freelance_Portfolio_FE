@@ -18,7 +18,7 @@ export const Navbar = () => {
         <div className="flex flex-shrink-0 items-center">
           <a href="#home">
             <img
-              className="mx-2 w-[100px] rounded-[4px] fixed top-3 left-[2rem] transition-transform duration-300 hover:opacity-100 opacity-[0.9] hover:scale-[1.2]"
+              className="mx-2 w-[100px] rounded-[4px] fixed top-3 left-[2rem] transition-transform duration-300 hover:scale-[1.1]"
               src={logo}
               alt="logo"
             />
@@ -53,7 +53,9 @@ export const Navbar = () => {
       <nav
         id="primary-multipage-navbar"
         className={`fixed top-0 right-0 h-full w-[60%] transition-transform duration-300 ease-in-out bg-white md:bg-transparent z-50 ${
-          isMenuOpen ? "transform translate-x-0 z-50" : "transform translate-x-full z-50"
+          isMenuOpen
+            ? "transform translate-x-0 z-50"
+            : "transform translate-x-full z-50"
         } md:static md:w-auto md:h-auto md:transform-none md:flex md:items-center md:justify-center md:pt-0 z-50`}
       >
         {/* Close Button for Mobile */}
